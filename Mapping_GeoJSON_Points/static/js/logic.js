@@ -39,7 +39,7 @@ L.geoJSON(sanFranAirport, {
   // We turn each feature into a marker on the map.
   onEachFeature: function(feature, layer) {
     console.log(feature);
-    layer.bindPopup("<h2>"+ "Airport Code: " + feature.properties.faa + "</h2></br><h3>"
+    layer.bindPopup("<h2>"+ "Airport Code: " + feature.properties.faa + "</h2></br><h3>" 
     + "Airport Name: " + feature.properties.name );
   }
 
@@ -50,8 +50,6 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
     maxZoom: 18,
     accessToken: API_KEY
 });
-
-
 
 // Then we add our 'graymap' tile layer to the map.
 streets.addTo(map);
